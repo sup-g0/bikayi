@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Fetch JSON</title>
+  </head>
+  <body>
+    <div class="inputs">
+      <div class="in-year">
+        <label for="year">Year :</label>
+        <select name="year" id="date-dropdown">
+          <option value="All Years" selected="selected">1901-2021</option>
+        </select>
+      </div>
+      <br />
+      <div class="in-category" id="in-category">
+        <label for="category">Category : </label>
+        <select name="category" id="category-dropdown">
+          <option value="All" selected="selected">All</option>
+          <option value="chemistry">Chemistry</option>
+          <option value="economics">Economics</option>
+          <option value="literature">Literature</option>
+          <option value="peace">Peace</option>
+          <option value="physics">Physics</option>
+          <option value="medicine">Medicine</option>
+        </select>
+      </div>
+      <button onclick="getValue()">Load Values</button>
+    </div>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Year</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody id="data"></tbody>
+    </table>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

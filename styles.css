@@ -1,0 +1,17 @@
+body {
+  position: absolute;
+}
+.inputs {
+  position: relative;
+  padding: 3rem 0;
+  left: 50%;
+}
+.in-year {
+  transform: translateX(-50%);
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.in-category {
+  display: inline-block;
+  transform: translateX(-50%);
+}
